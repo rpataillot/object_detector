@@ -46,9 +46,9 @@ python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person -c car
 ```
 ### Optional arguments:
 
-* -d --display-class-name: Display the class name of each detected object. Default False
+* **-d --display-class-name**: Display the class name of each detected object. **Default False**
 
-* -t --detection-threshold: Confidence threshold above which an object should be localized in the video. Default 0.5
+* **-t --detection-threshold**: Confidence threshold above which an object should be localized in the video. **Default 0.5**
 
 ## Editing config file
 
