@@ -2,7 +2,7 @@
     "weights_path":"resources/yolov3.weights", 
     "yolo_cfg_path":"resources/yolov3.cfg",
     "detectable_classes_path":"resources/coco.names",
-    "detection_threshold":0.5,
+    "default_detection_threshold":0.5,
     "generated_files_folder":"generated"
 }
 

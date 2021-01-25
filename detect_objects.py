@@ -18,7 +18,7 @@ if __name__ == "__main__":
     weights_path = Path(config["weights_path"])
     yolo_cfg_path = config["yolo_cfg_path"]
     generated_files_folder = Path(config["generated_files_folder"])
-    detection_threshold = config["detection_threshold"]
+    detection_threshold = config["default_detection_threshold"]
     detectable_classes_path = config["detectable_classes_path"]
 
     with open(detectable_classes_path, "r") as f:
