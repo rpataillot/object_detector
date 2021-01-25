@@ -30,11 +30,13 @@ wget -O resources/yolov3.weights https://pjreddie.com/media/files/yolov3.weights
 
 ## Usage
 
+In the python project:
 ```bash
 python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person
 ```
+A video in avi format will be generate in the folder *detect_objects/generated*.
 
-## Detect objects of multiple classes
+### Detect objects of multiple classes
 
 Yolo can detect is not limited to detect objects of one class. You can detect as much classes as you want with the -c argument.
 
@@ -42,19 +44,7 @@ Example:
 ```bash
 python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person -c car
 ```
-
-## Generated video path
-A video in avi format will be generate in the folder *detect_objects/generated*.
-
-example to detect person in a video and draw box around them:
-```bash
-python detect_objects.py -i /mypath/myvideo.mp4 -c person
-```
-
-The ouptut file path will be:
-*detect_objects/generated/myvideo_yolo_processed.avi*
-
-## Optional arguments:
+### Optional arguments:
 
 * -d --display-class-name: Display the class name of each detected object. Default False
 
