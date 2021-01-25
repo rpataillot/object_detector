@@ -14,7 +14,7 @@ class YoloObjectDetector:
         # Classes detected by yolo (which are coco dataset classes)
         self.detectable_classes = detectable_classes
 
-        # Colors used to differenciate objects
+        # Colors used to differenciate classes
         self.colors = np.random.uniform(0, 255, size=len(self.detectable_classes))
 
     def detect_objects_in_frame(self, frame, classes_to_detect, display_class_name, detection_threshold):
