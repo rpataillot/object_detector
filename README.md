@@ -54,5 +54,5 @@ python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person -c car
 
 The file *resources/config.json* can be edited as follow:
 
-detection_threshold: the confidence threshold above which an object will be detected
-default_detected_class: the default class detected by the program
+**detection_threshold**: the confidence threshold above which an object will be detected
+**default_detected_class**: the default class detected by the program
