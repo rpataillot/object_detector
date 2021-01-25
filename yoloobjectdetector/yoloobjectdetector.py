@@ -15,7 +15,7 @@ class YoloObjectDetector:
         self.detectable_classes = detectable_classes
 
         # Colors used to differenciate objects
-        self.colors = np.random.uniform(0, 255, size=(len(self.detectable_classes), 3))
+        self.colors = np.random.uniform(0, 255, size=len(self.detectable_classes))
 
     def detect_objects_in_frame(self, frame, classes_to_detect, display_class_name, detection_threshold):
 
@@ -67,7 +67,7 @@ class YoloObjectDetector:
                 x, y, w, h = boxes[i]
                 label = str(self.detectable_classes[class_ids[i]])
 
-                color = self.colors[i]
+                color = self.colors[class_ids[i]]
                 cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
 
                 if display_class_name:
