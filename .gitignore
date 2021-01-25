@@ -1,0 +1,5 @@
+data/
+venv/
+resources/yolov3.weights
+generated/
+__pycache__/
