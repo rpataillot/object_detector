@@ -1,5 +1,5 @@
 data/
 venv/
 resources/yolov3.weights
-generated/
+generated/*
 __pycache__/
