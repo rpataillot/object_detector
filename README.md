@@ -1,8 +1,8 @@
-#object_detector
+# object_detector
 
-object_detector is a program allowing to detect and localize object on a video using the YoloV3 model.
+**object_detector** is a program allowing to detect and localize object on a video using the YoloV3 model.
 As this model as been trained on the coco dataset, the model can only detect class from this dataset.
-You can find the complete list of the detetable classes in the file resources/coco.names.
+You can find the complete list of the detetable classes in the file *resources/coco.names*.
 
 ## Installation
 
@@ -23,7 +23,7 @@ cd object_detector
 pip install -r requirements.txt
 ```
 
-3) Download Yolo weights in resources/ folder
+3) Download Yolo weights in *resources/* folder
 ```bash
 wget -O resources/yolov3.weights https://pjreddie.com/media/files/yolov3.weights # Download yolo weights
 ```
@@ -36,8 +36,7 @@ python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person
 
 ## Detect objects of multiple classes
 
-Yolo can detect is not limited to detect objects of one class. You can detect as much classes as you want with the -c
-argument.
+Yolo can detect is not limited to detect objects of one class. You can detect as much classes as you want with the -c argument.
 
 Example:
 ```bash
@@ -45,7 +44,7 @@ python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person -c car
 ```
 
 ## Generated video path
-A video in avi format will be generate in the folder detect_objects/generated.
+A video in avi format will be generate in the folder *detect_objects/generated*.
 
 example to detect person in a video and draw box around them:
 ```bash
@@ -53,17 +52,17 @@ python detect_objects.py -i /mypath/myvideo.mp4 -c person
 ```
 
 The ouptut file path will be:
-detect_objects/generated/myvideo_yolo_processed.avi
+*detect_objects/generated/myvideo_yolo_processed.avi*
 
 ## Optional arguments:
 
-        -d --display-class-name: Display the class name of each detected object. Default False
+* -d --display-class-name: Display the class name of each detected object. Default False
 
-        -t --detection-threshold: Confidence threshold above which an object should be localized in the video. Default 0.5
+* -t --detection-threshold: Confidence threshold above which an object should be localized in the video. Default 0.5
 
 ## Editing config file
 
-The file resources/config.json can be edited as follow:
+The file *resources/config.json* can be edited as follow:
 
 detection_threshold: the confidence threshold above which an object will be detected
 default_detected_class: the default class detected by the program
