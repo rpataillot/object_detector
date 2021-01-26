@@ -58,7 +58,7 @@ The file *resources/config.json* can be edited as follow:
 
 ## Performances
 
-It takes **18 minutes** to process the following video ov 1125 frames of size ():
+It takes **18 minutes** to process the following video ov **1125 frames** of size **1280x720**:
 
 *https://www.youtube.com/watch?v=h4s0llOpKrU*
 
