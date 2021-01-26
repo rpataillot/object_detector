@@ -55,3 +55,25 @@ python detect_objects.py -i <PATH_TO_INPUT_VIDEO> -c person -c car
 The file *resources/config.json* can be edited as follow:
 
 * **default_detection_threshold**: the confidence threshold above which an object will be detected
+
+## Performances
+
+It takes **18 minutes** to process the following video ov 1125 frames of size ():
+
+*https://www.youtube.com/watch?v=h4s0llOpKrU*
+
+On a computer with the folowing characterisitcs:
+* CPU: **i7-5500U CPU @ 2.40GHz**
+* RAM: **16Gb**
+
+## Next step
+
+### Use of GPU
+
+This version does not support using gpu yet. OpenCV 4.2.0 supports gpu for inference using openCV's dnn module improving hugely speed performance of models.
+
+
+### Use of other models
+
+Other architecture suchs as Single Shot Detectors (SSD) or Mask R-CNN are able to detect objects within a frame and it would be interesting to compare their performances.
+If you are interested in such comparaisons you can find some answers in the official Yolov3 paper: *https://arxiv.org/pdf/1804.02767.pdf*
